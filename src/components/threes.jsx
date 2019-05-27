@@ -12,20 +12,18 @@ class Threes extends Component {
     };
   }
 
-  roll = () => {
-    return Math.floor(Math.random() * 6 + 1);
-  }
+  roll = () => Math.floor(Math.random() * 6 + 1)
 
   clickHandler = () => {
-    let diceRoll = []
-    let total = 0
-    for(let i = 0; i < 5; i++){
-      let dice = this.roll()
-      diceRoll.push(dice)
-      if(dice === 3) {
-        continue
+    const diceRoll = [];
+    let total = 0;
+    for (let i = 0; i < 5; i++) {
+      const dice = this.roll();
+      diceRoll.push(dice);
+      if (dice === 3) {
+        continue;
       } else {
-        total = total + dice
+        total += dice;
       }
     }
     this.setState({ rolledDice: diceRoll, currentScore: total });

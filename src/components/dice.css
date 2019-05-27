@@ -1,0 +1,10 @@
+#rolled-dice {
+    margin: 1em;
+}
+
+.dice{
+    display: inline;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 2em;
+}

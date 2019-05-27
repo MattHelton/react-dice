@@ -1,0 +1,13 @@
+#nav-bar{
+    overflow: hidden;
+    background-color: cornflowerblue;
+    height: auto;
+    padding: auto;
+}
+
+span {
+    font-weight: bold;
+    font-size: 3em;
+    color: whitesmoke;
+
+}

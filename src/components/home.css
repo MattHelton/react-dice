@@ -1,0 +1,22 @@
+#home {
+ color: cornflowerblue
+}
+
+#choose-cee-lo {
+    float: left;
+}
+
+#choose-threes {
+    float: right
+}
+
+#choose-cee-lo, #choose-threes {
+    margin-top: 3em;
+}
+
+a {
+    padding: 2em;
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: 3em;
+}

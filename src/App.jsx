@@ -1,4 +1,5 @@
 import React from 'react';
+import CeeLo from './components/ceeLo';
 import NavBar from './components/navBar';
 import Threes from './components/threes';
 import './App.css';
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Threes />
+      <CeeLo />
     </div>
   );
 }

@@ -2,21 +2,21 @@ import React from 'react';
 import * as PropTypes from 'prop-types';
 import './score.css';
 
-const Score = ({ currentScore }) => {
-  if (!currentScore) {
+const Score = ({ score }) => {
+  if (!score) {
     return <div />;
   }
   return (
     <div id="score">
-    Your current score is :
+      Your current score is :
       {' '}
-      {currentScore}
+      {score}
     </div>
   );
 };
 
 Score.propTypes = {
-  currentScore: PropTypes.number.isRequired,
+  score: PropTypes.number.isRequired,
 };
 
 export default Score;

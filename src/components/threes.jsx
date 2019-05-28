@@ -8,7 +8,7 @@ class Threes extends Component {
     super();
     this.state = {
       rolledDice: [],
-      currentScore: null,
+      score: null,
     };
   }
 
@@ -26,7 +26,7 @@ class Threes extends Component {
         total += dice;
       }
     }
-    this.setState({ rolledDice: diceRoll, currentScore: total });
+    this.setState({ rolledDice: diceRoll, score: total });
   }
 
   render() {
@@ -34,7 +34,7 @@ class Threes extends Component {
       <div id="threes">
         <RollButton onClick={this.clickHandler} />
         <Dice rolledDice={this.state.rolledDice} />
-        <Score currentScore={this.state.currentScore} />
+        <Score score={this.state.score} />
       </div>
     );
   }

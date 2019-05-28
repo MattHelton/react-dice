@@ -1,5 +1,6 @@
-#home {
- color: cornflowerblue
+#home, h2 {
+ color: cornflowerblue;
+ padding-bottom: 1em;
 }
 
 #choose-cee-lo {
@@ -7,15 +8,15 @@
 }
 
 #choose-threes {
-    float: right
+    float: right;
 }
 
 #choose-cee-lo, #choose-threes {
     margin-top: 3em;
+    width: 50%
 }
 
 a {
-    padding: 2em;
     color: cornflowerblue;
     text-decoration: none;
     font-size: 3em;

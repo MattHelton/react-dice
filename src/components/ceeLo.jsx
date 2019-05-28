@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import RollButton from './rollButton';
-import CeeLoDice from './ceeLoDice';
+import Dice from './dice';
 
 class CeeLo extends Component {
   constructor() {
@@ -27,7 +27,7 @@ class CeeLo extends Component {
     return (
       <div id="cee-lo">
         <RollButton onClick={this.clickHandler} />
-        <CeeLoDice rolledDice={this.state.rolledDice} />
+        <Dice rolledDice={this.state.rolledDice} />
       </div>
     );
   }

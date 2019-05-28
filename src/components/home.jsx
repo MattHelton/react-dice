@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './home.css';
 
 const Home = () => (
@@ -6,10 +7,10 @@ const Home = () => (
     <h1>Welcome to React Dice</h1>
     <h2>Choose a game</h2>
     <div id="choose-cee-lo">
-      <a href="/ceelo">Cee Lo</a>
+      <Link to="/ceelo">Cee Lo</Link>
     </div>
     <div id="choose-threes">
-      <a href="/threes">Threes</a>
+      <Link to="/threes">Threes</Link>
     </div>
   </div>
 );

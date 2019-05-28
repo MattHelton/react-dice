@@ -8,7 +8,7 @@ const Score = ({ score }) => {
   }
   return (
     <div id="score">
-      Your current score is :
+      Your score is :
       {' '}
       {score}
     </div>

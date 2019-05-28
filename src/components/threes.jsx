@@ -30,11 +30,12 @@ class Threes extends Component {
   }
 
   render() {
+    const { score, rolledDice } = this.state;
     return (
       <div id="threes">
         <RollButton onClick={this.clickHandler} />
-        <Dice rolledDice={this.state.rolledDice} />
-        <Score score={this.state.score} />
+        <Dice rolledDice={rolledDice} />
+        <Score score={score} />
       </div>
     );
   }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import RollButton from './rollButton';
 import Dice from './dice';
-import RollAgain from './rollAgain';
 import Score from './score';
 
 class CeeLo extends Component {
@@ -16,8 +15,6 @@ class CeeLo extends Component {
   roll = () => Math.floor(Math.random() * 6 + 1)
 
   clickHandler = () => {
-    const { clickHandler } = this.state;
-    console.log('clicked');
     const diceRoll = [];
     for (let i = 0; i < 3; i++) {
       const dice = this.roll();
@@ -44,11 +41,11 @@ class CeeLo extends Component {
 
 
   render() {
-    const { score } = this.state;
+    const { score, rolledDice } = this.state;
     return (
       <div id="cee-lo">
         <RollButton onClick={this.clickHandler} />
-        <Dice rolledDice={this.state.rolledDice} />
+        <Dice rolledDice={rolledDice} />
         <Score score={score}/>
       </div>
     );

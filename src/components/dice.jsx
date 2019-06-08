@@ -15,7 +15,7 @@ const Dice = ({ rolledDice }) => {
 };
 
 Dice.propTypes = {
-  rolledDice: PropTypes.arrayOf.isRequired,
+  rolledDice: PropTypes.array.isRequired,
 };
 
 export default Dice;

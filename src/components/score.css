@@ -1,5 +1,6 @@
 #score {
     font-size: 3em;
+    position: relative;
     bottom: 0;
-    position: fixed;
+    margin:  0 auto;
 }
